@@ -21,8 +21,16 @@ sth -t <hash> -w <wordlist>
 ```
 The argument `-t` is the hash to be searched for. The argument `-w` is the wordlist to be used, in case you also want to search offline using hashcat. The wordlist should be a text file with one password per line.
 
+## To search for a password from a hash using "hashcat" CLI
+
+For example:
+```bash
+hashcat -m 1400 -a 3 "6e16f6b886303bccbrdc7f0bc87b35rec36f15ac94075748e04ff5004ab5deed" wordlists/rockyou.txt --force
+```
+You might want to consider running it on a Google Colab notebook to use the GPUs.
+
 ## About the hashcat wordlists
 
-A popular password wordlist is rockyou.txt. It contains a list of commonly used passwords and is popular among pen testers.
-IT can be downloaded from [here](https://www.kaggle.com/datasets/wjburns/common-password-list-rockyoutxt/download?datasetVersionNumber=1). The file is too large to be uploaded to github.
+A popular password wordlist is `rockyou.txt`. It contains a list of commonly used passwords and is popular among pen testers.
+It can be downloaded from [here](https://www.kaggle.com/datasets/wjburns/common-password-list-rockyoutxt/download?datasetVersionNumber=1). The file is too large to be uploaded to github.
 The file should be places in the `wordlists` directory.

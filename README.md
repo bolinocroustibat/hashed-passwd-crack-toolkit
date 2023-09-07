@@ -1,13 +1,21 @@
 # Hash cracking testkit
 
+## Prerequisites
+
+Install [hashcat](https://hashcat.net/hashcat/). It is a password cracking tool.
+
+
 ## To hash a password and test it against a hash
 
 ```bash
 python3 test.py
 ```
 
-## To search for a password from a hash using "search that hash" directly
+## To search for a password from a hash using "search that hash" CLI
 
+[Search That Hash](https://github.com/HashPals/Search-That-Hash) is a Python lib that uses online services to search for hashes, plus [hashcat](https://hashcat.net/hashcat/) to search offline.
+
+To search for a password from a hash using "search that hash" directly, run the following command:
 ```bash
 sth -t <hash> -w <wordlist>
 ```

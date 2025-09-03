@@ -8,7 +8,7 @@ Install [hashcat](https://hashcat.net/hashcat/). It is a password cracking tool.
 ## To hash a password and test it against a hash
 
 ```bash
-python3 test.py
+python3 main.py
 ```
 
 ## To search for a password from a hash using "search that hash" CLI

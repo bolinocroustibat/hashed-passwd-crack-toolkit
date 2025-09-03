@@ -1,7 +1,7 @@
 [project]
-name = "Hashed Password Crack Test Tool"
-version = ""
-description = ""
+name = "hashed-password-crack-test-tool"
+version = "0.0.1"
+description = "Hashed Password Crack Test Tool"
 authors = [
     {name = "Adrien Carpentier", email = "me@adriencarpentier.com"},
 ]
